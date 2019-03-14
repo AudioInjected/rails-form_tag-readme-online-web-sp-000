@@ -182,3 +182,10 @@ Started GET "/posts/new" for 108.21.242.7 at 2019-03-14 00:18:00 +0000
 Processing by PostsController#new as HTML
   Rendered posts/new.html.erb within layouts/application (0.9ms)
 Completed 200 OK in 53ms (Views: 51.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new?post%5Btitle%5D=Test&post%5Bdescription%5D=Test+description+" for 108.21.242.7 at 2019-03-14 00:18:56 +0000
+Processing by PostsController#new as HTML
+  Parameters: {"post"=>{"title"=>"Test", "description"=>"Test description "}}
+  Rendered posts/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 70ms (Views: 68.9ms | ActiveRecord: 0.0ms)
